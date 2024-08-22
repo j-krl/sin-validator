@@ -1,7 +1,17 @@
 {
   "name": "sin-validator",
   "version": "1.0.0",
-  "main": "index.html",
+  "main": "src/index.html",
   "author": "Jesse Kearl",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "parcel": "^2.12.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4"
+  }
 }
