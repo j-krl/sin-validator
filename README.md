@@ -1,0 +1,2 @@
+- Install by running `yarn` at the project root
+- Run the dev server on port 1234 with `yarn start`
