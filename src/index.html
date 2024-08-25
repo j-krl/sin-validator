@@ -3,6 +3,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SIN Validator</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body></body>
+  <body>
+    <div id="root" class="flex-col">
+      <div id="container" class="flex-col gap-sm">
+        <h1>SIN Validator</h1>
+        <p>Enter a nine-digit SIN below for validation</p>
+        <div id="controls" class="flex-col gap-md">
+          <div id="input-wrapper">
+            <input id="sin-input" maxlength="9" type="text" />
+            <input
+              id="masked-sin-input"
+              pattern=""
+              maxlength="11"
+              placeholder="123-456-789"
+              type="text"
+            />
+          </div>
+          <button id="validate-button">Validate</button>
+        </div>
+        <div id="validation-result-wrapper">
+          <div id="validation-result" />
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./main.ts"></script>
+  </body>
 </html>
